@@ -1,0 +1,148 @@
+{% extends "layout/layout.html" %}
+
+{% load static %}
+
+{% block title %}Site{% endblock %}
+
+{% block content %}
+<div class="content">
+    <div class="step-1" >
+        <img src="{% static "img/4e8829556bf942dd86c9.jpg" %}" width="560" height="560" alt="">
+        <div class="step-1-info">
+            <div class="info-1">
+                <div class="info-1-name" ><b>Адвокат <br> Олег Антонов</b></div>
+                <div class="info-1-content">
+                    <p>Помогаю решать судебные и досудебные юридические вопросы. Работаю с физическими и юридическими лицами, помогаю в ведении бизнеса.</p>
+                    <p style="margin-top: 59px;" ><b>Москва, +456 344 267 15 24</b></p>
+                    <p><b>antonovoleg@service.com</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="step-2">
+        <div class="service">
+            <div class="service-name"><h1><b>Мои услуги</b></h1></div>
+            <div class="service-content">
+                <div style="padding: 7px 0 6px;"><h1>ФИЗИЧЕСКИМ ЛИЦАМ</h1></div>
+                <div style="padding: 8px 0 6px;"><p>Жилищные вопросы, обжалование судебных решений, вопросы наследства, 
+                    вопросы недвижимости, нотариальные услуги, 
+                    оформление документов в гос органы, миграционное право, представительство в суде, 
+                    консультации по гражданскому праву, участие в переговорах</p></div>
+
+                <div style="padding: 7px 0 6px;"><h1>ЮРИДИЧЕСКИМ ЛИЦАМ</h1></div>
+                <div style="padding: 8px 0 6px;"><p>Рабочие договоры, ведение налогов, взыскание долгов, защита 
+                    интеллектуального права, сопровождение бизнеса, госзакупки, 
+                    денежные расчеты, оформление сотрудников, регистрация и закрытие 
+                    бизнеса, регистрация и закрытие ИП, адвокат по ДДП</p></div>
+            </div>
+        </div>
+        <div style="align-self: center; padding: 15px 0 150px;"><button><p>Записаться на консультацию</p></button></div>
+    </div>
+    <div class="step-3">
+        <div class="step-3-header">
+            <h1>Опыт работы и практика</h1>
+            <p>Мой опыт работы в юриспруденции 10 лет, я являюсь членом Московской городской коллегии адвокатов. Работаю по всему Северо-западному району.</p>
+        </div>
+        <div class="step-3-content">
+            <p>За многолетнюю адвокатскую практику у меня появилось более 100 выигранных дел в различных областях юридического права. Я помогаю физическим лицам и компаниям.</p>
+            <p>Я оказываю юридическую помощь в различных областях деятельности как граждан, так и юридических лиц. Оказываю услуги по комплексному сопровождению бизнеса, разрешению экономических и общегражданских споров, семейному праву, уголовному праву.</p>
+            <p>Участвую как представитель в гражданском и административном судопроизводстве. А также могу помочь в составлении и подаче индивидуальных жалоб в Европейский суд по правам человека.</p>
+        </div>
+    </div>
+    <div class="step-4">
+        <div class="step-4-header">
+            <h1>Цены на мои услуги</h1>
+            <p>Здесь представлены цены на основныне виды юридических услуг</p>
+        </div>
+        <div class="cols">
+            <h3>Консультация физических лиц</h3>
+            <p>1500р</p>
+        </div>
+        <div class="cols">
+            <h3>Консультация юридических лиц</h3>
+            <p>5000р</p>
+        </div>
+        <div class="cols">
+            <h3>Составление правовых документов</h3>
+            <p>3000р</p>
+        </div>
+        <div class="cols">
+            <h3>Ознакомление с документами</h3>
+            <p>2000р</p>
+        </div>
+        <div class="cols">
+            <h3>Представительство в суде</h3>
+            <p>6000р</p>
+        </div>
+    </div>
+    <div class="step-5">
+        <div class="step-5-header"><p>Правовые новости и полезные материалы</p></div>
+        <div class="step-5-content">
+            <div class="box-content">
+                <img src="{% static "img/anasalshanti169265.jpg" %}" width="360" height="237" alt="">
+                <h3>О защите персональных данных</h3>
+                <p>Парижская конвенция по охране промышленной собственности в 1883 года.</p>
+            </div>
+            <div class="step-5-content">
+                <div class="box-content">
+                    <img src="{% static "img/note.jpg" %}" width="360" height="237" alt="">
+                    <h3>Интеллектуальная собственность</h3>
+                    <p>Часто причисляют законы о недобросовестной конкуренции</p>
+                </div>
+            </div>
+            <div class="step-5-content">
+                <div class="box-content">
+                    <img src="{% static "img/home.jpg" %}" width="360" height="237" alt="">
+                    <h3>О защите персональных данных</h3>
+                    <p>Законодательством предусмотрены вычеты на сумму доходов.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="btn">
+        <button>Читать все статьи</button>
+    </div>
+    <div class="step-6">
+        <div class="step-6-header"><h2>Контакты</h2></div>
+        <div class="step-6-content">
+            <div class="step-6-box">
+                <div style="font-size: 30px; padding: 0 0 40px;">
+                    <p>+456 344 267 15 24</p>
+                    <p>antonovoleg@service.com</p>
+                </div>
+                <p style="font-size: 18px; padding: 0 0 30px;">Москва, регистрационный номер 0/123/45</p>
+                <div>
+                    <img src="{% static "img/twitter_icon.svg" %}" width="30" height="30" alt="">
+                    <img src="{% static "img/vk_iocn.svg" %}" width="30" height="30" alt="">
+                    <img src="{% static "img/telegram_icon.svg" %}" width="30" height="30" alt="">
+                </div>
+            </div>
+            <form method="post" class="step-6-box">
+                {% csrf_token %}
+                
+                {{ forms.name }} <br>
+                <span class="error1"></span>
+                {{ forms.email }} <br>
+                <span class="error2"></span>
+                {{ forms.number }} <br>
+                <span class="error3"></span>
+                <button type="submit" id="submit">Записаться на консультацию</button>
+            </form>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer-up">
+        <a href="#">About</a>
+        <a href="#">Features</a>
+        <a href="#">Works</a>
+        <a href="#">Blog</a>
+        <a href="#">Help</a>
+        <a href="#">Contacts</a>
+    </div>
+    <div class="footer-down">
+        <p>© All Rights Reserved. Acme Design Co.</p>
+        <p>hello@mysite.com</p>
+    </div>
+</footer>
+{% endblock %}
