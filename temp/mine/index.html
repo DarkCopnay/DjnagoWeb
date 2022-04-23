@@ -119,13 +119,12 @@
             </div>
             <form method="post" class="step-6-box">
                 {% csrf_token %}
-                
-                {{ forms.name }} <br>
                 <span class="error1"></span>
-                {{ forms.email }} <br>
+                {{ forms.name }} <br>
                 <span class="error2"></span>
-                {{ forms.number }} <br>
+                {{ forms.email }} <br>
                 <span class="error3"></span>
+                {{ forms.number }} <br>
                 <button type="submit" id="submit">Записаться на консультацию</button>
             </form>
         </div>

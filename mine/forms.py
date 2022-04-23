@@ -15,6 +15,7 @@ class ContactForm(forms.ModelForm):
             'email': forms.TextInput(attrs={
                 'class': 'inputs',
                 "placeholder": "Введите свое имя",
+                'title': "Формат почты [domen@gmail.com]",
                 'id': 'email'
             }),
             'number': forms.TextInput(attrs={

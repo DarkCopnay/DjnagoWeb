@@ -11,6 +11,13 @@ body {
     background-color: white;
 }
 
+.error1, .error2, .error3 {
+    color: red;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
 /*Nav Block*/
 
 
