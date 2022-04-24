@@ -14,13 +14,13 @@ class ContactForm(forms.ModelForm):
             }),
             'email': forms.TextInput(attrs={
                 'class': 'inputs',
-                "placeholder": "Введите свое имя",
+                "placeholder": "Введите свое почту",
                 'title': "Формат почты [domen@gmail.com]",
                 'id': 'email'
             }),
             'number': forms.TextInput(attrs={
                 'class': 'inputs',
-                "placeholder": "Введите свое имя",
+                "placeholder": "Введите свое номер телефона",
                 'id': 'number'
             }),
         }
