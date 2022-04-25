@@ -7,6 +7,8 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: 'Roboto', sans-serif;
     background-color: white;
 }
@@ -86,6 +88,7 @@ body {
 .step-1 {
     display: flex;
     flex-direction: row;
+    align-self: center;
     margin-top: 50px;
 }
 
@@ -93,12 +96,11 @@ body {
     width: 560px;
     height: 560px;
     background-color: #1040e0;
-    margin-left: 51px;
+    margin-left: 50px;
+    border-radius: 10px;
 }
 
 .info-1 {
-    width: 440px;
-    height: 351px;
     padding: 60px;
     color: white;
 }
@@ -184,6 +186,7 @@ body {
     justify-content: center;
     margin-left: 159px;
     margin-right: 159px;
+    word-wrap: break-word;
 }
 
 .step-3-header h1 {
@@ -191,12 +194,12 @@ body {
     font-size: 42px;
     text-align: center;
     font-weight: bold;
-    font-weight: bold;
 }
 
 .step-3-header p {
     font-size: 30px;
     padding: 30px 0 60px;
+    align-self: center;
     width: 760px;
 }
 
@@ -222,10 +225,7 @@ body {
     margin-right: 159px;
 }
 
-.step-4-header {
-    text-align: center;
-    padding: 0 0 90px;
-}
+.step-4-header {text-align: center;}
 
 .step-4-header h1 {
     font-size: 42px;
@@ -266,11 +266,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 135px 0 45px;
+    flex-flow: row wrap;
 }
 
 .step-5-header {
-    margin: 0 20px;
     font-weight: bold;
     font-size: 42px;
     height: 141px;
@@ -281,9 +280,12 @@ body {
 .step-5-content {
     display: flex;
     flex-direction: row;
+    flex-flow: row wrap;
 }
 
 .box-content img {
+    /* width: 300px;
+    height: 207px; */
     margin-right: 52px;
 }
 
@@ -299,6 +301,7 @@ body {
 }
 
 .btn {
+    align-self: center;
     padding: 60px 0 150px;
     margin-left: 159px;
     margin-right: 159px;
@@ -386,6 +389,8 @@ body {
 }
 
 .footer-up {
+    display: flex;
+    flex-direction: row;
     margin: 0 0 10px;
     padding: 16px 10px 0;
 }
@@ -408,3 +413,242 @@ body {
 
 /*Content endblock*/
 
+/*Media block*/
+@media  (max-width: 1025px) {
+    .topnav-content h3 {
+        font-size: 15px;
+    }
+    .topnav-nav a {
+        font-size: 15px;
+    }
+    .topnav-content button {
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+
+    .step-1 {flex-direction: column;}
+    .step-1-info {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .service-content {padding: 45px 50px 0;}
+
+    .step-5-header {
+        text-align: center;
+    }
+    
+    .step-5-content {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .step-4-header p {
+        margin: 20px 0 20px; /*20px 300px*/
+    }
+}
+
+@media (max-width: 769px) {
+    .topnav {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .topnav-content {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .topnav-content button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .service-content {
+        padding: 45px 0 0;
+        margin: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .step-2 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .step-3 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .step-3-header p {
+        width: auto;
+        align-self: flex-start;
+    }
+    
+    .step-3-content {
+        width: auto;
+    }
+    .step-4 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .step-4-header p {
+        width: auto;
+    }
+
+    .cols h3 {
+        width: auto;
+    }
+
+    .step-5-header {
+        font-size: 20px;
+    }
+    .step-6-content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 426px) {
+    .step-1 img {
+        align-self: center;
+        width: 385px;
+        margin: 0 20px;
+    }
+
+    .step-1-info {
+        width: 385px;
+        height: 420px;
+        align-self: center;
+    }
+    
+    .info-1 {
+        padding: 30px 20px 45px;
+        font-size: 16px;
+    }
+    
+    .info-1-name {
+        margin: 0;
+    }
+
+    .step-3-header h1 {
+        font-size: 30px;
+    }
+
+    .step-3-header p {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .box-content img {
+        margin-right: 0;
+    }
+    
+    .box-content h3 {
+        font-size: 20px;
+    }
+
+    .step-5-content {
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .btn {margin: 0;}
+
+    .step-3-header h1 {
+        width: auto;
+    }
+
+    .step-3-header p {
+        width: auto;
+    }
+
+    .step-4 {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .step-6 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .step-6-box {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .inputs {
+        width: 360px;
+        height: 60px;
+    }
+
+    .footer-up {
+        flex-direction: column;
+    }
+
+    .footer-up a {
+        padding: 2px 0;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 376px) {
+    .inputs {
+        width: 300px;
+    }
+}
+
+@media (max-width: 320px) {
+    .step-1 img {
+        width: 280px;
+    }
+
+    .step-1-info {
+        width: 280px;
+        height: 490px;
+        align-self: center;
+    }
+
+    .step-2 button {
+        padding: 16px 20px;
+    }
+
+    .step-4 {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .step-5 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .cols h3 {
+        width: auto;
+    }
+
+    .box-content img {
+        width: 300px;
+        height: 207px;
+    }
+
+    .box-content p {
+        font-size: 16px;
+        width: auto;
+    }
+
+    .inputs {
+        align-self: center;
+        width: 200px;
+        height: 60px;
+    }
+
+    .step-6-p p {
+        font-size: 20px; 
+        width: auto;
+    }
+}
+/*Media endblock*/
