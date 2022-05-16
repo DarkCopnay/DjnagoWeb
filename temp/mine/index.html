@@ -117,6 +117,7 @@
             </div>
         </div>
         <form method="post" class="step-6-box">
+            {% csrf_token %}
             <span class="error1"></span>
             <input type="text" class="inputs" placeholder="Введите свое имя" style="margin-top: 20px;">
             <span class="error2"></span>

@@ -1,4 +1,9 @@
 $(document).ready(function() {
+    $("#btn-1").click(function() {
+        $("html, body").animate({
+            scrollTop: $('.step-6-box').offset().top
+        }, 1000);
+    })
     $("#submit").click(function() {
         let name = $("#name").val();
         let email = $("#email").val();
